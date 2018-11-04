@@ -24,12 +24,8 @@ module.exports = {
         ]
     },
     resolve: { extensions: ['.ts', '.tsx', '.js', '.json'] },
-    externals: {
-        "react": "React",
-        "react-dom": "ReactDOM"
-    }
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js',
         publicPath: '/'
     },
